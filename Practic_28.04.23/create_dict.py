@@ -26,6 +26,6 @@ def switch(case):
    func = switcher.get(case, lambda: print('Неверный выбор'))
    func()
 
-switch(input('Введите номер функции: ')) # Выводит функию 1
-#switch(2) # Выводит функию 2
-switch(4) # Выводит Неверный выбор
+switch(int(input('Введите номер функции: '))) # Выводит функию 1
+switch(2) # Выводит функию 2
+switch(1) # Выводит Неверный выбор
