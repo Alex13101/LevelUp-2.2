@@ -1,6 +1,6 @@
 import openpyxl
 
-workbook = openpyxl.load_workbook('example.xlsx')
+workbook = openpyxl.load_workbook('example1.xlsx')
 worksheet = workbook.active
 
 # worksheet['A1'] = 'Name'
@@ -10,7 +10,7 @@ worksheet = workbook.active
 # worksheet.append(['John', 30, 'New York'])
 # worksheet.append(['Jane', 25, 'San Francisco'])
 
-workbook.save('example.xlsx')
+workbook.save('example1.xlsx')
 
 for row in worksheet.iter_rows(values_only=True):
     print(row)

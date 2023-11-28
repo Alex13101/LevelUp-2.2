@@ -52,7 +52,7 @@ my_function()
 import random
 import time
 
-def retry(num_retries=3):
+def retry(num_retries=5):
     def decorator(func):
         def wrapper(*args, **kwargs):
             for i in range(num_retries):
@@ -68,7 +68,7 @@ def retry(num_retries=3):
 
 @retry()
 def my_function():
-    if random.random() < 0.5:
+    if random.random() < 0.8:
         raise Exception("Something went wrong")
     else:
         return "Success"

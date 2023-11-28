@@ -39,4 +39,4 @@ for thread in threads:
 print(threads)
 print(time.time() - start)
 print(len(all_products))
-#print(all_products)
+print(all_products)
